@@ -1,0 +1,10 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+<div [formGroup]="form">
+  <input type="text" formControlName="password">
+</div>
+
+{{form.get('password').errors |json}}
